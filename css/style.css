@@ -112,24 +112,53 @@
 	font-weight: 500;
 }
 /*---------- header-menu ----------*/
-.header-menu-row {
-	height: 163px;
+.row-header-menu {
+	height: 86px;
 	box-shadow: 0 0 10px rgba(35, 31, 32, 0.37);
-	/*box-shadow: 0 3px 10px rgba(35, 31, 32, 0.37);	*/
 	background-color: #ffffff;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
-.header-menu {}
+.header-menu {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 .header-logo {
-	width: 300px;
-	height: 102px;
-	box-shadow: 4px 4px 8px rgba(35, 31, 32, 0.17);
-	/*background-color: #ffffff;*/
+	height: 100%;
+	position: relative;
 	/*----view----*/
-	border-bottom: 102px solid #ffffff;
-	border-right: 60px solid transparent;
+}
+.logo-text {	
+	font-family: "PEPSI";
+	font-size: 36px;
+	font-weight: 400;
+	letter-spacing: 1.8px;
+	position: absolute;
+	left: 18px;
+	z-index: 2;
+}
+.logo-text span:nth-child(1) {
+	color: #0566ad;
+	margin-right: 10px;
+}
+.logo-text span {
+	color: #11accd;
+}
+.header-logo img {
+	position: absolute;
+	bottom: 10px;
 }
 .header-menu-block {}
-.header-menu-list {}
-.header-menu__item {}
-.header-menu__link {}
+.header-menu-list {
+	display: flex;
+}
+.header-menu__item:not(:last-child){
+	margin-right: 40px;
+}
+.header-menu__link {
+	color: #272727;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+}

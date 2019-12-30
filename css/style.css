@@ -628,7 +628,7 @@
 	width: 25%;
 }
 .footer-menu__item:not(:last-child) {
-	margin-bottom: 12px;
+	margin-bottom: 8px;
 }
 .footer-menu__link {
 	color: #ffffff;
@@ -713,4 +713,23 @@
 	font-family: 'icomoon2';
 	color: #11accd;
 	font-size: 15px;
+}
+/*---------- section footer-copyright ----------*/
+.footer-copyright {
+	position: absolute;
+	bottom: 0;
+	height: 70px;
+	background-color: rgba(0, 0, 0, 0.36);
+}
+.footer-copyright-block {
+	position: relative;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/*----view----*/
+	color: #999999;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
 }

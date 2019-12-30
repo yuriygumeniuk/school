@@ -127,7 +127,6 @@
 .header-logo {
 	height: 100%;
 	position: relative;
-	/*----view----*/
 }
 .logo-text {	
 	font-family: "PEPSI";
@@ -253,7 +252,6 @@
 .fact-media {
 	position: relative;
 }
-.fact-media__item {}
 .fact-media__btn {
 	padding-top: 5px;
 	transform: translate(50%,-50%);
@@ -291,7 +289,7 @@
 	display: flex;
 	justify-content: space-between;	
 }
-.block__title {
+.row__title {
 	text-align: center;
 	color: #000000;
 	font-family: 'Raleway', sans-serif;
@@ -307,7 +305,6 @@
 	overflow: hidden;
 	position: relative;
 }
-.grade__img {}
 .grade__text {
 	display: flex;
 	align-items: center;
@@ -325,8 +322,9 @@
 	text-transform: uppercase;
 }
 /*---------- section active ----------*/
-.active {}
-.block__title {}
+.active {
+	margin-bottom: 80px;
+}
 .active-block {
 	display: flex;
 	justify-content: space-between;
@@ -350,7 +348,7 @@
 	background-color: #0566ad;
 	margin-bottom: 30px;
 }
-.active-text {
+.block-text {
 	height: 150px;
 	overflow: hidden;
 	display: flex;
@@ -358,13 +356,14 @@
 	align-items: center;
 	justify-content: space-between;
 }
-.active__title {
+.block__title {
 	color: #000000;
 	font-family: 'Raleway', sans-serif;
 	font-size: 26px;
 	font-weight: 500;
 }
-.active__desc {
+.block__desc {
+	/*text-overflow: ellipsis;*/
 	max-height: 70px;
 	overflow: hidden;
 	color: #333333;
@@ -374,9 +373,86 @@
 	line-height: 24px;
 	text-align: center;
 }
-.active__link {
+.block__link {
 	color: #0566ad;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	font-weight: 500;
+}
+/*---------- section experience ----------*/
+.experience {
+	margin-bottom: 80px;
+}
+.experience-block {
+	width: 1170px;
+	height: 350px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px;	
+	justify-content: space-between;
+	align-content: space-between;
+}
+.experience-item {
+	min-height: 130px;
+	display: flex;
+	width: 33.333%;
+	/*margin-bottom: 60px;*/
+}
+.experience-number-block {
+	margin-right: 30px;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	background-color: #0566ad;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*----view----*/
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;	
+	font-size: 40px;
+	font-weight: 700;
+	padding-bottom: 5px;
+}
+.experience-item .block-text {
+	align-items: flex-start;
+	overflow: hidden;
+}
+.experience-item .block__desc {
+	text-align: left;
+	max-width: 245px;
+}
+/*---------- section staffs ----------*/
+.staffs {
+}
+.staffs-block {
+	display: flex;
+}
+.staffs-item {
+	width: 25%;
+}
+.staffs__img {
+	margin-bottom: 22px;
+}
+/*---------------*/
+.social-list {
+	display: flex;
+}
+.social__item {
+
+}
+.social__item:not(:last-child) {
+	margin-right: 13px;
+}
+.social__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 25px;
+	height: 25px;
+	background-color: #666666;
+	/*----view----*/
+	font-family: 'icomoon';
+	color: #ffffff;
+	font-size: 100%;
 }

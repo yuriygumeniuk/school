@@ -10,6 +10,17 @@
   font-display: block;
 }
 @font-face {
+  font-family: 'icomoon2';
+  src:  url('../fonts/icomoon2.eot?cnws7h');
+  src:  url('../fonts/icomoon2.eot?cnws7h#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon2.ttf?cnws7h') format('truetype'),
+    url('../fonts/icomoon2.woff?cnws7h') format('woff'),
+    url('../fonts/icomoon2.svg?cnws7h#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
   font-family: "PEPSI";
   src: url("../fonts/PEPSIpl.eot"); /* IE9 Compat Modes */
   src: url("../fonts/PEPSIpl.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */

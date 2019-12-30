@@ -394,7 +394,6 @@
 	min-height: 130px;
 	display: flex;
 	width: 33.333%;
-	/*margin-bottom: 60px;*/
 }
 .experience-number-block {
 	margin-right: 30px;
@@ -422,6 +421,7 @@
 }
 /*---------- section staffs ----------*/
 .staffs {
+	margin-bottom: 80px;
 }
 .staffs-block {
 	display: flex;
@@ -451,4 +451,94 @@
 .social__link img {
 	width: 65%;
 	height: 65%;
+}
+/*---------- section events ----------*/
+.events {
+	margin-bottom: 80px;
+}
+.events-block {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;	
+}
+.event-item {
+	width: calc(50% - 15px);
+	background-color: #f1f1f1;
+	height: 500px;
+	padding: 31px 20px 15px;
+	display: flex;
+	justify-content: space-between;	
+}
+.event-date {
+	width: 53px;
+}
+.date__day {
+	width: 100%;
+	height: 26px;
+	background-color: #11accd;
+	/*----view----*/
+	color: #fefefe;
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.date__mount-year {
+	width: 100%;
+	height: 51px;
+	background-color: #0566ad;
+	/*----view----*/
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.event-content {
+	width: 450px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.event__title {
+	margin-bottom: 16px;
+	color: #000000;
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+}
+.event__desc {
+	flex: 1 0 auto;
+	margin-bottom: 20px;
+	overflow: hidden;
+	max-width: 450px;
+	max-height: 45px;
+	color: #333333;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.event__img {
+	margin-bottom: 19px;
+}
+.event__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 130px;
+	height: 35px;
+	border-radius: 5px;
+	background-color: #0566ad;
+	/*----view----*/
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
 }

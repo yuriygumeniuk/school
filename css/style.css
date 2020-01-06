@@ -166,13 +166,20 @@
 	display: flex;
 }
 .header-menu__item:not(:last-child){
-	margin-right: 40px;
+	margin-right: 10px;
 }
 .header-menu__link {
+	display: block;
+	padding: 5px;
 	color: #272727;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	font-weight: 500;
+	border-bottom: 2px solid rgba(5, 102, 173, 0);
+}
+.header-menu__item.active a,
+.header-menu__link:hover {
+	border-bottom: 2px solid rgba(5, 102, 173, 1);
 }
 /*========== MAIN ==================*/
 /*---------- section slider ----------*/
@@ -182,7 +189,7 @@
 .slider {
 	height: 503px;
 	position: relative;
-	margin-bottom: 45px;
+	margin-bottom: 60px;
 }
 .slider-banner {
 	position: relative;
@@ -219,7 +226,6 @@
 .fact {
 	padding-top: 5px;
 	height: 340px;
-	margin-bottom: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -338,14 +344,14 @@
 	text-transform: uppercase;
 }
 /*---------- section active ----------*/
-.active {
+.smart {
 	margin-bottom: 80px;
 }
-.active-block {
+.smart-block {
 	display: flex;
 	justify-content: space-between;
 }
-.active-item {
+.smart-item {
 	min-height: 343px;
 	width: 25%;
 	display: flex;
@@ -353,7 +359,7 @@
 	align-items: center;
 	justify-content: space-between;
 }
-.active__img {
+.smart__img {
 	border-radius: 50%;
 	display: flex;
 	align-items: center;

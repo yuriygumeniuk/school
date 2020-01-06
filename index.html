@@ -5,14 +5,14 @@
 	<title>School</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 	
-<header class="heder wrapper">
+<header class="header wrapper_lg">
 
 <section class="contact-login-row">
 	<div class="contact-login wrap">
@@ -98,9 +98,24 @@
 	<a href="#!" class="slider-arrow forward">
 		<img src="img/slider-arrow.png" alt="">
 	</a>
-	<div class="slider-banner">
-		<img src="img/banner.jpg" alt="" class="slider__img">
-	</div>
+	<!-- slider-banner -->
+	<div class="slider-banner swiper-container">
+		<div class="swiper-wrapper">
+			<!-- 1 -->
+			<div class="swiper-slide">
+				<div class="item-block">
+					<img src="img/banner.jpg" alt="" class="slider__img">
+				</div>		
+			</div>
+			<!-- 2 -->
+			<div class="swiper-slide">
+				<div class="item-block">
+					<img src="img/banner.jpg" alt="" class="slider__img">
+				</div>		
+			</div>
+			<!--  -->
+		</div>
+	</div> <!-- slider-banner end -->
 </section>
 
 <section class="fact wrap">
@@ -410,10 +425,12 @@
 
 </main>
 
-<footer class="footer wrapper">
-	<img src="img/footer-background.jpg" alt="" class="footer__background">
-	<section class="footer-control wrap">
-		<div class="footer-block">
+<footer class="footer wrapper_lg">
+	<div class="footer__img ibg">
+		<img src="img/footer-background.jpg" alt="" class="img_bg">
+	</div>	
+	<section class="footer-control">
+		<div class="footer-block wrap">
 			<!-- 1 -->
 			<div class="footer-menu">
 				<div class="footer-item__title">Quick Links</div>
@@ -473,14 +490,15 @@
 			</div>
 		</div>	
 	</section>
-	<section class="footer-copyright wrapper">
+	<section class="footer-copyright wrapper_lg">
 		<div class="footer-copyright-block wrap">
 			<div class="copyright__company">Copyright © 2017 companyname.com. All Rights Reserved.</div>
 			<div class="copyright__design">Design by: http://www.freepsddesign.com</div>
 		</div>
-		
 	</section>	
 </footer>
-	
+<script src="js/jquery-3.4.1.js"></script>	
+<script src="js/swiper.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>

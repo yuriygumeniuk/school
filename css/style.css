@@ -1,3 +1,14 @@
+.ibg {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.wrapper_lg {
+	width: 100%;
+	margin: 0 auto;
+}
 .wrapper {
 	width: 1500px;
 	margin: 0 auto;
@@ -592,14 +603,22 @@
 .footer {
 	position: relative;
 	height: 380px;
-	background-color: rgba(0, 0, 0, 0.61);
 }
-.footer__background {
-	position: absolute;
+.footer__img:before {
+	background-color: rgba(0, 0, 0, 0.61);
+	width: 100%;
+	height: 100%;
+	display: block;
+	content: '';
 	z-index: -1;
 }
 /*---------- section footer-menu ----------*/
 .footer-control {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 	padding-top: 53px;
 }
 .footer-block {

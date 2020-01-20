@@ -260,14 +260,12 @@
 }
 
 .slider {
-  border: 1px solid red !important;
   position: relative;
   margin-bottom: 60px;
-  height: 503px;
+  max-height: 503px;
 }
 
 .slider-banner {
-  border: 1px solid green !important;
   position: relative;
   z-index: 2;
   background-color: inherit;
@@ -275,7 +273,14 @@
   box-shadow: inset 0px 10px 10px -6px rgba(35, 31, 32, 0.37);
 }
 
+.item-block {
+  border: 1px solid red !important;
+  overflow: hidden;
+}
+
 .slider__img {
+  display: block;
+  width: 100%;
   position: relative;
   z-index: -1;
 }

@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>School</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">	
 </head>
 <body>
 <div class="wrapper-main">
@@ -30,10 +30,10 @@
 
 <section class="header-control-row">
 	<div class="header-control wrap">
-		<div class="search-block">
-			<input type="text" placeholder="Search..." class="search__text">
-			<input type="submit" class="search__btn" value="&#xe907;">
-		</div>
+		<form action="#" class="search-block">
+			<input autocomplete="off" type="text" name="form[]" data-value="Search..." class="search__text input req name">
+			<button type="submit" class="search__btn">&#xe907;</button>
+		</form>
 		<nav>
 			<ul class="header-nav">
 				<li class="header-nav__item"><a href="#!" class="header-nav__link">High School</a></li>
@@ -359,29 +359,43 @@
 	<div class="events-block">
 		<!-- 1 -->
 		<div class="event-item">
-			<div class="event-date">
-				<div class="date__day">18</div>
-				<div class="date__mount-year">July<br>2019</div>
-			</div>
 			<div class="event-content">
-				<div class="event__title">Lorem Ipsum is simply dummy</div>
-				<div class="event__desc">It is a long established fact that a reader will be distracted by the readable content...</div> 
-				<div class="event__img"><img src="img/event-01.jpg" alt=""></div>
-				<a href="#!" class="event__btn">Read More</a>
+				<div class="event-date">
+					<div class="date__day">18</div>
+					<div class="date__mount-year">July<br>2019</div>
+				</div>
+
+				<div class="event-text">
+					<div class="event__title">Lorem Ipsum is simply dummy</div>
+					<div class="event__desc"><p>It is a long established fact that a reader will be distracted by the readable content...</p></div> 				
+				</div>
 			</div>
+
+			<div class="event__img">
+				<img src="img/event-01.jpg" alt="">
+			</div>
+
+			<a href="#!" class="event__btn">Read More</a>
 		</div>	
 		<!-- 2 -->
 		<div class="event-item">
-			<div class="event-date">
-				<div class="date__day">04</div>
-				<div class="date__mount-year">Oct<br>2019</div>
-			</div>
 			<div class="event-content">
-				<div class="event__title">Lorem Ipsum is simply dummy</div>
-				<div class="event__desc">It is a long established fact that a reader will be distracted by the readable content...</div>
-				<div class="event__img"><img src="img/event-01.jpg" alt=""></div>
-				<a href="#!" class="event__btn">Read More</a>
+				<div class="event-date">
+					<div class="date__day">04</div>
+					<div class="date__mount-year">Oct<br>2019</div>
+				</div>
+				
+				<div class="event-text">
+					<div class="event__title">Lorem Ipsum is simply dummy</div>
+					<div class="event__desc"><p>It is a long established fact that a reader will be distracted by the readable content...</p></div> 				
+				</div>
 			</div>
+
+			<div class="event__img">
+				<img src="img/event-02.jpg" alt="">
+			</div>
+
+			<a href="#!" class="event__btn">Read More</a>
 		</div>	
 	</div> <!-- events-block --------------->
 </section>
@@ -442,11 +456,13 @@
 	<div class="footer__img ibg">
 		<img src="img/footer-background.jpg" alt="" class="img_bg">
 	</div>	
+
 	<section class="footer-control">
 		<div class="footer-block wrap">
 			<!-- 1 -->
-			<div class="footer-menu">
+			<div class="footer-item footer-menu">
 				<div class="footer-item__title">Quick Links</div>
+
 				<ul class="footer-menu-list">
 					<li class="footer-menu__item"><a href="#!" class="footer-menu__link">Home</a></li>
 					<li class="footer-menu__item"><a href="#!" class="footer-menu__link">About Us</a></li>
@@ -459,7 +475,7 @@
 				</ul>
 			</div>
 			<!-- 2 -->
-			<div class="footer-contact">
+			<div class="footer-item">
 				<div class="footer-item__title">Quick Links</div>
 				<div class="contact-block">
 					<!-- 1 -->
@@ -482,15 +498,16 @@
 				</div>
 			</div>
 			<!-- 3 -->
-			<div class="footer-newsletter">
+			<div class="footer-item">
 				<div class="footer-item__title">Newsletter</div>
-				<div class="newsletter-block">
-					<input type="text" class="newsletter__text" placeholder="Enter your email">
-					<input type="submit" class="newsletter__btn" value="subscribe">
-				</div>
+
+				<form action="#" class="newsletter-block">
+					<input autocomplete="off" type="text" name="form[]" data-value="Enter your email" class="newsletter__text input req email">
+					<button type="submit" class="newsletter__btn">subscribe</button>
+				</form>
 			</div>
 			<!-- 4 -->
-			<div class="footer-social">
+			<div class="footer-item footer-social">
 				<div class="footer-item__title">find us on</div>
 				<ul class="footer-social-list">
 					<li class="footer-social__item"><a href="#!" class="footer-social__link">&#xe900;</a></li>
@@ -503,6 +520,7 @@
 			</div>
 		</div>	
 	</section>
+
 	<section class="footer-copyright wrapper_lg">
 		<div class="footer-copyright-block wrap">
 			<div class="copyright__company">Copyright © 2017 companyname.com. All Rights Reserved.</div>
